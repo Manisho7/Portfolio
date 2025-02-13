@@ -10,21 +10,29 @@ import Navbar from './components/Navbar';
 import Experience from './components/Experience';
 import { motion } from 'framer-motion';
 import { Element, scroller } from 'react-scroll';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const App = () => {
-  useEffect(() => {
-    // Remove hash from URL to prevent remembering the last position
-    window.history.scrollRestoration = "manual";
-    window.history.replaceState(null, null, " ");
+  const location = useLocation();
+  const navigate = useNavigate();
 
-    // Scroll to the "hero" section after the page loads
+  useEffect(() => {
+    // ✅ Reset scroll behavior & ensure base URL (`/`)
+    window.history.scrollRestoration = "manual";
+
+    // ✅ If user is on any section (e.g., `/projects`), force `/`
+    if (location.pathname !== "/") {
+      navigate("/", { replace: true });
+    }
+
+    // ✅ Scroll to top after resetting the URL
     setTimeout(() => {
       scroller.scrollTo("home", {
         duration: 500,
         smooth: "easeInOutQuad",
       });
-    }, 100); // Short delay ensures DOM is fully loaded before scrolling
-  }, []);
+    }, 100); // Short delay ensures DOM is ready
+  }, [location.pathname, navigate]);
 
   return (
     <motion.div
