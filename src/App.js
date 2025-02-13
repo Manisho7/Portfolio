@@ -1,37 +1,34 @@
-import React, { useEffect } from 'react';
-import './App.css';
-import Hero from './components/Hero';
-import About from './components/About';
-import Education from './components/Education';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Navbar from './components/Navbar';
-import Experience from './components/Experience';
-import { motion } from 'framer-motion';
-import { Element, scroller } from 'react-scroll';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { Element, scroller } from "react-scroll";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import { motion } from "framer-motion";
+import './App.css'
 
 const App = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    // ✅ Reset scroll behavior & ensure base URL (`/`)
-    window.history.scrollRestoration = "manual";
-
-    // ✅ If user is on any section (e.g., `/projects`), force `/`
+    // If the user refreshes the page, always redirect to the base URL ("/")
     if (location.pathname !== "/") {
       navigate("/", { replace: true });
     }
 
-    // ✅ Scroll to top after resetting the URL
+    // Short delay to ensure DOM is fully loaded before scrolling
     setTimeout(() => {
       scroller.scrollTo("home", {
         duration: 500,
         smooth: "easeInOutQuad",
       });
-    }, 100); // Short delay ensures DOM is ready
+    }, 100);
   }, [location.pathname, navigate]);
 
   return (
