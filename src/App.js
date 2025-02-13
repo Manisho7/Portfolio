@@ -19,7 +19,7 @@ const App = () => {
 
     // Scroll to the "hero" section after the page loads
     setTimeout(() => {
-      scroller.scrollTo("hero", {
+      scroller.scrollTo("home", {
         duration: 500,
         smooth: "easeInOutQuad",
       });
@@ -37,7 +37,7 @@ const App = () => {
       }}
     >
       <Navbar />
-      <Element name="hero">
+      <Element name="home">
         <Hero />
       </Element>
       <Element name="about">
