@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="contact-details">
           <div className="contact-item">
             <i className="fas fa-envelope contact-icon"></i>
-            <a href="mailto:manishyegurla3@gmail.com" className="contact-info">manishyegurla3@gmail.com</a>
+            <a href="mailto:manishyegurla95@gmail.com" className="contact-info">manishyegurla95@gmail.com</a>
           </div>
           <div className="contact-item">
             <i className="fas fa-phone contact-icon"></i>
