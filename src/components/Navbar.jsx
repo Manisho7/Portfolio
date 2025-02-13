@@ -52,8 +52,9 @@ const Navbar = () => {
       setActiveSection(sectionIds[activeIndex]);
 
       // Prevent redundant URL updates
-      if (location.pathname !== `/${sectionIds[activeIndex]}`) {
-        navigate(`/${sectionIds[activeIndex]}`, { replace: true });
+      const newUrl = `/Portfolio/${sectionIds[activeIndex]}`;
+      if (window.location.pathname !== newUrl) {
+        window.history.replaceState(null, null, newUrl);
       }
     };
 
@@ -85,7 +86,8 @@ const Navbar = () => {
     });
 
     // Update URL properly
-    navigate(`/${sectionId}`, { replace: true });
+    const newUrl = `/Portfolio/${sectionId}`;
+    window.history.replaceState(null, null, newUrl);
   };
 
   return (
@@ -96,7 +98,9 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <span
               key={index}
-              className={`nav-link ${activeSection === item.id ? "active" : ""}`}
+              className={`nav-link ${
+                activeSection === item.id ? "active" : ""
+              }`}
               onClick={() => handleScrollToSection(item.id)}
             >
               <i className={item.icon}></i> {item.name}
