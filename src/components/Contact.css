@@ -1,0 +1,90 @@
+/* Contact Page Styles */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 70vh; /* Adjust height but keep it smaller */
+    padding: 50px 20px; /* Maintain spacing for aesthetics */
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f39c12;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-5px);
+    color: #f39c12;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+    color: #f39c12;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info:hover {
+    color: #f39c12;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 30px;
+    }
+  
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-details {
+      font-size: 1rem;
+    }
+  
+    .contact-item {
+      gap: 10px;
+    }
+  
+    .contact-icon {
+      font-size: 1.2rem;
+    }
+  }
+  

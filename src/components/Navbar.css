@@ -1,0 +1,119 @@
+/* Navbar Styles with Active Section Highlighting */
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo styling */
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f39c12;
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 3px 8px rgba(243, 156, 18, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.2);
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Base styling for navbar links */
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link {
+  text-decoration: none !important;
+}
+
+.nav-link:focus, 
+.nav-link:active, 
+.nav-link:hover {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+
+/* Active link styling */
+.nav-link.active {
+  color: #f39c12;
+  font-weight: bold;
+  padding-bottom: 2px;
+  transform: scale(1.1);
+}
+
+/* Navbar icons */
+.nav-link i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover i {
+  transform: scale(1.2);
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #f39c12;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-links {
+      flex-wrap: wrap;
+      gap: 15px;
+  }
+
+  .navbar-logo {
+      margin-bottom: 10px;
+  }
+}
+
+/* Fix content shifting under navbar */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 0px !important;
+}

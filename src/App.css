@@ -1,0 +1,73 @@
+/* Global Styles */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header.app-header {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+}
+
+header.app-header h1 {
+  font-size: 2.5rem;
+}
+
+header.app-header p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+main.app-main {
+  flex: 1;
+  padding: 20px;
+}
+
+main.app-main section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main.app-main section h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+main.app-main section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+footer.app-footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
