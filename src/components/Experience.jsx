@@ -6,7 +6,7 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Java Full Stack Developer',
+      title: 'Senior Software Developer',
       company: 'Allstate, Texas, USA',
       duration: 'Apr 2024 - Present',
       details: [
@@ -18,7 +18,7 @@ const Experience = () => {
       ],
     },
     {
-      title: 'Java Full Stack Developer',
+      title: 'Software Developer 3',
       company: 'Wells Fargo, Texas, USA',
       duration: 'Aug 2022 - Mar 2024',
       details: [
@@ -30,7 +30,7 @@ const Experience = () => {
       ],
     },
     {
-      title: 'Java Full Stack Developer',
+      title: 'Software Engineer 2',
       company: 'Charles Schwab, Southlake, Texas, USA',
       duration: 'Jun 2021 - Jul 2022',
       details: [
