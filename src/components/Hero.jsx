@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero-container">
       <div className="hero-content">
         <h1 className="hero-title">Manish Yegurla</h1>
-        <p className="hero-subtitle">Java Full-Stack Developer</p>
+        <p className="hero-subtitle">Software Developer</p>
         
         <div className="hero-icons">
           <a href="https://github.com/Manisho7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
