@@ -12,7 +12,7 @@ const Hero = () => {
           <a href="https://github.com/Manisho7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/manish-yegurla-429286206/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/manish-y-aa2204241/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i className="fab fa-linkedin"></i>
           </a>
           <a href="https://leetcode.com/u/manish_yegurla/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
